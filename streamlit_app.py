@@ -10,7 +10,7 @@ submit = st.button("Ask")
 
 if submit and prompt.strip():
     with st.spinner("Thinking..."):
-        client = Client(api_key=st.secrets["GROK_API_KEY"])
+        client = Client(api_key=st.secrets["xai-Wif4rwfhaE4p2rEfERCkucOLCvscHFab0h6nN9Ky6hYGPSZ3XlQ40IZDKzgAUoq0X99We4BAi3YI578J"]["value"])  # <-- FIXED HERE
         chat = client.chat.create(
             model="grok-4-0709",
             messages=[user(prompt)],

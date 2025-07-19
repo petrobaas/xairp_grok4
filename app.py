@@ -4,7 +4,7 @@ from xai_sdk.chat import user
 import os
 
 # Load API key securely from Streamlit secrets
-api_key = st.secrets["GROK_API_KEY"]
+api_key = st.secrets["xai-Wif4rwfhaE4p2rEfERCkucOLCvscHFab0h6nN9Ky6hYGPSZ3XlQ40IZDKzgAUoq0X99We4BAi3YI578J"]["value"]
 
 st.set_page_config(page_title="Grok 4 Chat")
 st.title("🧠 Ask Grok 4 Anything")
